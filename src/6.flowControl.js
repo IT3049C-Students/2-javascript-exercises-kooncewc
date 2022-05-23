@@ -7,19 +7,18 @@
  *    if no number was provided or if the value provided wasn't a number (hint: typeof), return false
  */
 function fizzBuzz(num) {
-  if ((num % 5) && (num % 3) == 0)
-  return "fizzbuzz";
-
-  elseif(num != int)
-  return "false";
-
-  elseif((num % 5) == 0)
-  return "buzz";
-
-  elseif((num % 5) && (num % 3) == 0)
-  document.write("fizzbuzz");
-  return  "fizzbuzz";
-
+  if ((num % 5  == 0) && (num % 3 == 0) ){
+  console.log ("fizzbuzz");
+  }
+  else if((num % 5) == 0){
+  console.log("buzz");
+}
+  else if((num % 3) == 0){
+  console.log("fizz");
+  }
+  else if(num != int){
+  console.log("false");
+  }
 }
 
 module.exports = {

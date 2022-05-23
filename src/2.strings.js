@@ -9,24 +9,23 @@ function reverseString(str) {
    * 
    * Can even be done on one line
    */
-  var Stringsplit = str.split("");
-  var reverseArray = Stringsplit.reverse();
-  var joinArray = reverseArray.join("");
-  return joinArray;
+  str.split("").reverse().join("");
+
 }
 
 //capitalize: should return the input in all-caps
 // Example: "this is a string" => "THIS IS A STRING"
 function capitalize(str) {
-  str.value = str.value.toLocaleUpperCase();
-  return ;
+  const strToArr = str.split('');
+  const UpArr = strToArr.map(word => word[0].toUpperCase()+ word.substring(1));
+  return UpArr ;
 }
 
 // splitString: should divide a string into substrings and return an array
 // Example: "Jane,Doe,21"  =>  [ "Jane", "Doe", "21" ]
 function splitString(str, splitAt = `,`) {
-  var splitString = str.split("");
-  return ;
+  const arrr = str.split(',');
+  return arr ;
 }
 module.exports = {
   reverseString,
