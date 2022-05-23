@@ -9,8 +9,8 @@ function reverseString(str) {
    * 
    * Can even be done on one line
    */
-  str.split("").reverse().join("");
-return str;
+ reverse =  str.split("").reverse().join("");
+return reverse;
 }
 
 //capitalize: should return the input in all-caps
@@ -18,7 +18,8 @@ return str;
 function capitalize(str) {
   const strToArr = str.split('');
   const UpArr = strToArr.map(word => word[0].toUpperCase()+ word.substring(1));
-  return UpArr ;
+  DownArr = UpArr.join("");
+  return DownArr ;
 }
 
 // splitString: should divide a string into substrings and return an array

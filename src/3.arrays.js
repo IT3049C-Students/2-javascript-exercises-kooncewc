@@ -22,7 +22,7 @@ arr.reduce((a,b) => a + b,0)
 // Example: filtering 2 out of [1,2,3,5,6,2,4,2] should return [1,3,5,6,4]
 function filterOut(arr, item) {
 
-  var i = array.length
+  var i = arr.length
 
   while(i--)
   {
@@ -36,16 +36,16 @@ arr.splice(arr.indexOf(item),1);
 }
 // Append: you should be able to add an item to the end of an array
 function append(arr, item) {
-arr.push(arr,item);
+arr.push(arr, item);
   return arr;
 }
 
 // Truncate: you should be able to remove the last item of an array
 // hint: pop, slice, splice would all work. Pay attention to the return value in the docs
 function truncate(arr) {
-  var popped = arr.pop
+arr.splice(arr.length - 1);
   
-  return;
+  return arr;
 }
 
 // Concat: you should be able to join together two arrays
