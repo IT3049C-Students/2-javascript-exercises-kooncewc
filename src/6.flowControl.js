@@ -7,6 +7,7 @@
  *    if no number was provided or if the value provided wasn't a number (hint: typeof), return false
  */
 function fizzBuzz(num) {
+
   if ((num % 5  == 0) && (num % 3 == 0) ){
   return "fizzbuzz";
   }
@@ -16,13 +17,15 @@ function fizzBuzz(num) {
   else if((num % 3) == 0){
   return "fizz";
   }
-  else if(num = String){
-  return false;
-  }
-  else{
+  else if((num % 5 != 0) &&(num % 3 != 0) && num >= 0){
     return num;
   }
+ else {
+    return false
+  }
+  
 }
+
 
 module.exports = {
   fizzBuzz
