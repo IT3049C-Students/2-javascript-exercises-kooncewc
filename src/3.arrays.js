@@ -6,16 +6,28 @@
  * indexoff(arr, 3); should return the index 2
  */
 function indexOf(arr, item) {
-  index = ArrayUtils.indexOf(arr,item);
-  return index ;
+  if (arr == null) return -1;
+  length = arr.length;
+  i = 0;
+  while (i < length){
+    if(arr[i] == item) 
+    return i;
+    else i=i+1;
+  }
+
+  return -1;
 }
 
 // Sum: you should be able to sum the items of an array
 // Example: arr = [1,2,3]   =>  6
 function sum(arr) {
-arr.reduce((a,b) => a + b,0)
+  sums = 0;
+for (let i =0; i < arr.length; i += 1){
+sums += arr[i]
+
+}
+return sums;
   
-  return arr;
 }
 
 // Filter: Should filter out all instances of a value from an array
@@ -36,7 +48,7 @@ arr.splice(arr.indexOf(item),1);
 }
 // Append: you should be able to add an item to the end of an array
 function append(arr, item) {
-arr.push(arr, item);
+arr.splice(arr.length,0, item);
   return arr;
 }
 
