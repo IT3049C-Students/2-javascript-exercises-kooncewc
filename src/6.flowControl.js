@@ -8,16 +8,19 @@
  */
 function fizzBuzz(num) {
   if ((num % 5  == 0) && (num % 3 == 0) ){
-  console.log ("fizzbuzz");
+  return "fizzbuzz";
   }
   else if((num % 5) == 0){
-  console.log("buzz");
+  return"buzz";
 }
   else if((num % 3) == 0){
-  console.log("fizz");
+  return "fizz";
   }
-  else if(num != int){
-  console.log("false");
+  else if(num != Number){
+  return "false";
+  }
+  else{
+    return num;
   }
 }
 

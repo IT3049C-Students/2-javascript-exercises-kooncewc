@@ -2,7 +2,7 @@
 // Example: strictEquality(1, true) => false
 // Example: strictEquality(1, 1) => true
 function strictEquality(val1, val2) {
-  if(val1 == val2)
+  if(val1 === val2)
   return true ;
   else
   return false;

@@ -12,7 +12,11 @@ function or(a, b) {
 //and: should return true only if both a and b are truthy
 function and(a, b) {
   
-  return a==true&&b==true;
+  if (a && b){
+    return true;
+
+  } else
+  return false;
 }
 
 module.exports = {

@@ -9,12 +9,12 @@
  *      * must use the `class_of` property in the introduction
  */
 const personObject = {
-first_name: "William",
+first_name: "William ",
 last_name: "Koonce",
 class_of: 5,
 
 full_name:function(){
-  return this.first_name + "" +this.last_name;
+  return this.first_name +  " " +this.last_name;
   
   },
   introduction:function(){
